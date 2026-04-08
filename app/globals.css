@@ -3,21 +3,29 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --twitter-blue: #1DA1F2;
+  --x-black: #000000;
+  --threads-black: #000000;
+  --substack-orange: #FF7731;
+  --bluesky-blue: #1185FE;
+  --accent-blue: #5B66F1;
+  --soft-bg: #F8FAFF; /* Soft lavender-blue background from design image */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-twitter: var(--twitter-blue);
+  --color-threads: var(--threads-black);
+  --color-substack: var(--substack-orange);
+  --color-bluesky: var(--bluesky-blue);
+  --color-accent: var(--accent-blue);
+  --color-soft-bg: var(--soft-bg);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Removed automatic dark mode to ensure design consistency across all browsers (Fix for Edge) */
 
 body {
   background: var(--background);

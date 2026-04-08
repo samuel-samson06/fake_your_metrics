@@ -1,0 +1,24 @@
+import React from 'react'
+
+function Footer() {
+  return (
+    <footer className="w-full border-t border-gray-100 mt-auto bg-gray-50/50">
+      <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div className="flex flex-col gap-2 text-center md:text-left">
+          <div className="text-lg font-bold text-gray-900">FakeYourMetrics</div>
+          <p className="text-xs text-gray-500">
+            © 2024 FakeYourMetrics. Built for architects of digital presence.
+          </p>
+        </div>
+
+        <div className="flex items-center gap-6 text-xs font-medium text-gray-600">
+          <a href="#" className="hover:text-gray-900 transition-colors">Privacy Policy</a>
+          <a href="#" className="hover:text-gray-900 transition-colors">Terms of Service</a>
+          <a href="#" className="hover:text-gray-900 transition-colors">Contact Support</a>
+        </div>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer
