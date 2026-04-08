@@ -1,7 +1,8 @@
 import React from 'react'
 import { PostState, formatNumber, formatDate } from '../homepage/Main'
-import { FaRegComment, FaRetweet, FaRegHeart } from 'react-icons/fa'
+import {  FaRetweet, FaRegHeart } from 'react-icons/fa'
 import { FiMoreHorizontal } from 'react-icons/fi'
+import {GoComment} from "react-icons/go"
 
 interface Props {
   state: PostState
@@ -40,7 +41,7 @@ const BlueskyPost: React.FC<Props> = ({ state }) => {
       {/* Engagement */}
       <div className="flex items-center gap-8 text-gray-500 text-sm border-t border-gray-100 pt-4 px-1">
         <div className="flex items-center gap-2 group cursor-pointer ">
-            <FaRegComment className="w-5 h-5" />
+            <GoComment className="w-5 h-5" />
           <span className="font-semibold">{formatNumber(state.replies)}</span>
         </div>
         

@@ -2,7 +2,7 @@ import React from 'react'
 import { PostState, formatNumber, formatDate } from '../homepage/Main'
 import { FaRegHeart, FaRegComment } from 'react-icons/fa'
 import { FiShare, FiPlus, FiCheckCircle } from 'react-icons/fi'
-
+import { FaRetweet } from 'react-icons/fa6'
 interface Props {
   state: PostState
 }
@@ -63,9 +63,13 @@ const SubstackPost: React.FC<Props> = ({ state }) => {
             <FaRegComment className="w-5 h-5" />
             <span className="text-sm font-medium">{formatNumber(state.replies)}</span>
           </div>
-        </div>
-        <div className="text-gray-400 cursor-pointer ">
-          <FiShare className="w-5 h-5" />
+          <div className="flex items-center gap-2 group cursor-pointer ">
+            <FaRetweet className="w-5 h-5" />
+            <span className="">{formatNumber(state.retweets)}</span>
+          </div>
+          <div className="text-gray-400 cursor-pointer ">
+            <FiShare className="w-5 h-5" />
+          </div>
         </div>
       </div>
     </div>

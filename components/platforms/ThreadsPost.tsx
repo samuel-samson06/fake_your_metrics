@@ -1,6 +1,7 @@
 import React from 'react'
 import { PostState, formatNumber, formatDate } from '../homepage/Main'
-import { FaRegHeart, FaRegComment, FaRetweet } from 'react-icons/fa'
+import { FaRegHeart, FaRegComment } from 'react-icons/fa'
+import { FaRetweet } from 'react-icons/fa6'
 import { FiSend, FiMoreHorizontal } from 'react-icons/fi'
 import { HiBadgeCheck } from 'react-icons/hi'
 
@@ -47,14 +48,14 @@ const ThreadsPost: React.FC<Props> = ({ state }) => {
           <span className="text-[14px] font-medium">{formatNumber(state.likes)}</span>
         </div>
         <div className="flex items-center gap-1.5 group cursor-pointer">
-          <FaRegComment className="w-[20px] h-[20px] hover:scale-110 transition-transform" />
+          <FaRegComment className="w-[20px] h-[20px] hover:scale-110 transition-transform rotate-y-180" />
           <span className="text-[14px] font-medium">{formatNumber(state.replies)}</span>
         </div>
-        <div className="flex items-center gap-1.5 group cursor-pointer">
+        <div className="flex items-center gap-1 group cursor-pointer">
           <FaRetweet className="w-[20px] h-[20px] hover:scale-110 transition-transform" />
           <span className="text-[14px] font-medium">{formatNumber(state.retweets)}</span>
         </div>
-        <FiSend className="w-[20px] h-[20px] cursor-pointer hover:scale-110 transition-transform" />
+        <FiSend className="w-[20px] h-[20px] cursor-pointer hover:scale-110 transition-transform rotate-[45deg]" />
       </div>
     </div>
   )

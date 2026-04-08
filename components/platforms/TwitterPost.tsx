@@ -1,6 +1,8 @@
 import React from 'react'
 import { PostState, formatNumber, formatDate } from '../homepage/Main'
-import { FaRegComment, FaRetweet, FaRegHeart, FaRegBookmark } from 'react-icons/fa'
+import {  FaRegBookmark } from 'react-icons/fa'
+import { FaRetweet } from 'react-icons/fa6'
+import { AiOutlineHeart } from 'react-icons/ai'
 import { FiShare, FiMoreHorizontal } from 'react-icons/fi'
 import { HiBadgeCheck } from 'react-icons/hi'
 import Image from 'next/image'
@@ -62,15 +64,15 @@ const TwitterPost: React.FC<Props> = ({ state }) => {
         </div>
         
         <div className="flex items-center gap-1 group cursor-pointer  p-2">
-          <div className="p-2 rounded-full ">
-            <FaRetweet className="w-[20px] h-[20px]" />
+          <div className=" rounded-full ">
+            <FaRetweet className="w-[21px] h-[21px]" />
           </div>
           <span className="text-[13px]">{formatNumber(state.retweets)}</span>
         </div>
 
         <div className="flex items-center gap-1 group cursor-pointer  p-2">
-          <div className="p-2 rounded-full ">
-            <FaRegHeart className="w-[18px] h-[18px]" />
+          <div className="py-1 rounded-full ">
+            <AiOutlineHeart className="w-[22px] h-[22px]" />
           </div>
           <span className="text-[13px]">{formatNumber(state.likes)}</span>
         </div>
