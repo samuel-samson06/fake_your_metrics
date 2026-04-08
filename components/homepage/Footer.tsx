@@ -7,7 +7,7 @@ function Footer() {
         <div className="flex flex-col gap-2 text-center md:text-left">
           <div className="text-lg font-bold text-gray-900">FakeYourMetrics</div>
           <p className="text-xs text-gray-500">
-            © 2024 FakeYourMetrics. Built for architects of digital presence.
+            © 2026 FakeYourMetrics. Built for architects of digital presence.
           </p>
         </div>
 

@@ -40,15 +40,15 @@ export const formatDate = (dateStr: string, platform: Platform): string => {
 function Main() {
   const [state, setState] = useState<PostState>({
     platform: 'twitter',
-    name: 'Digital Architect',
-    username: 'architect_ui',
+    name: 'Name',
+    username: 'username',
     content: "Perfection is not when there is nothing more to add, but when there is nothing left to take away. Design is the silent ambassador of your brand. 📐✨",
     isVerified: true,
     likes: 1240,
     retweets: 482,
     replies: 12,
-    time: '10:24',
-    date: '2024-10-24',
+    time: '10:00',
+    date: '2026-01-01',
     views: 1200000,
     profileImage: null,
     title: 'The Future of Interface Design'
@@ -92,7 +92,7 @@ function Main() {
           Create Realistic Social Media Posts
         </h1>
         <p className="text-lg text-gray-600">
-          Generate high-quality social media mockups for Twitter, Threads, and more in seconds.
+          Generate high quality social media posts for Twitter, Threads, and more in seconds.
         </p>
       </div>
 
