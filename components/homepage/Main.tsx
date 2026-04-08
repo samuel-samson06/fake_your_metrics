@@ -92,7 +92,7 @@ function Main() {
           Create Realistic Social Media Posts
         </h1>
         <p className="text-lg text-gray-600">
-          Generate high quality social media posts for Twitter, Threads, and more in seconds.
+          Generate high quality social media posts for Twitter, Threads and more in seconds.
         </p>
       </div>
 

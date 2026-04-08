@@ -1,16 +1,19 @@
 "use client"
 
+import Link from 'next/link';
 import React from 'react'
 
 function Header() {
   return (
     <header className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto w-full">
-      <div className="text-xl font-bold tracking-tight text-foreground">
-        FakeYourMetrics
+      <div>
+        <Link href="/" className="text-xl font-bold tracking-tight text-foreground">
+          FakeYourMetrics
+        </Link>
       </div>
       
       <nav className="hidden md:flex items-center gap-8">
-        <a href="#" className="text-xs font-semibold text-accent transition-colors border-b-2 border-accent pb-0.5">
+        <a href="/how_it_works" className="text-xs font-semibold text-accent transition-colors border-b-2 border-accent pb-0.5">
           How it works
         </a>
       </nav>
