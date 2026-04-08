@@ -3,6 +3,7 @@ import { PostState, formatNumber, formatDate } from '../homepage/Main'
 import { FaRegComment, FaRetweet, FaRegHeart, FaRegBookmark } from 'react-icons/fa'
 import { FiShare, FiMoreHorizontal } from 'react-icons/fi'
 import { HiBadgeCheck } from 'react-icons/hi'
+import Image from 'next/image'
 
 interface Props {
   state: PostState
@@ -53,16 +54,16 @@ const TwitterPost: React.FC<Props> = ({ state }) => {
 
       {/* Action Bar */}
       <div className="flex items-center justify-between text-gray-500 border-t border-gray-100 pt-1">
-        <div className="flex items-center gap-1 group cursor-pointer  p-2">
-          <div className="p-2 rounded-full ">
-            <FaRegComment className="w-[18px] h-[18px]" />
+        <div className="flex items-center group cursor-pointer  p-2">
+          <div className="p-1 rounded-full ">
+            <Image src={"/twitter_chat_bubble.png"} alt="Twitter chat bubble" width={25} height={25}/>
           </div>
           <span className="text-[13px]">{formatNumber(state.replies)}</span>
         </div>
         
         <div className="flex items-center gap-1 group cursor-pointer  p-2">
           <div className="p-2 rounded-full ">
-            <FaRetweet className="w-[18px] h-[18px]" />
+            <FaRetweet className="w-[20px] h-[20px]" />
           </div>
           <span className="text-[13px]">{formatNumber(state.retweets)}</span>
         </div>
