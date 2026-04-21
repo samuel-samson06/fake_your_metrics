@@ -13,7 +13,7 @@ export default function Page() {
       <section className="pt-24 pb-16 px-6 text-center max-w-4xl mx-auto">
 
         <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-6">
-          How FakeYourMetrics Works
+          How PostMetrics Works
         </h1>
         <p className="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
           Design stunning social media mockups and metric visualizations in seconds. Our tool helps you build posts without the complexity.

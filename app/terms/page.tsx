@@ -2,11 +2,6 @@ import React, { ReactNode } from 'react'
 import Header from '@/components/homepage/Header'
 import Footer from '@/components/homepage/Footer'
 import { 
-  FiShield, 
-  FiBookOpen, 
-  FiKey, 
-  FiAlertTriangle, 
-  FiXCircle, 
   FiMail, 
   FiArrowLeft 
 } from 'react-icons/fi'
@@ -24,7 +19,7 @@ export default function TermsPage() {
             Terms of <span className="text-indigo-600">Service</span>
           </h1>
           <p className="text-slate-500 max-w-xl mx-auto leading-relaxed">
-            Please read these terms carefully before using our platform. By accessing FakeYourMetrics, you agree to be bound by these professional guidelines.
+            Please read these terms carefully before using our platform. By accessing <strong>PostMetrics</strong>, you agree to these guidelines.
           </p>
         </div>
 
@@ -32,88 +27,84 @@ export default function TermsPage() {
         <div className="bg-white rounded-[2.5rem] shadow-2xl shadow-indigo-100/40 p-8 md:p-16 border border-slate-100 relative overflow-hidden">
           
           <div className="space-y-16">
+
             {/* 1. Acceptance */}
-            <Section 
-              icon={<FiShield className="text-indigo-600" />} 
-              title="1. Acceptance of Terms"
-            >
+            <Section title="1. Acceptance of Terms">
               <p>
-                By accessing and using the services provided by FakeYourMetrics (&apos;the Service&apos;), 
-                you acknowledge that you have read, understood, and agree to be bound by these 
-                Terms of Service. If you do not agree to these terms, please do not use the Service.
+                By accessing and using PostMetrics (&apos;the Service&apos;), you agree to be bound by these Terms of Service. 
+                If you do not agree, please do not use the platform.
               </p>
               <p className="mt-4">
-                We reserve the right to update or modify these terms at any time. Your continued 
-                use of the platform following any changes constitutes acceptance of those changes.
+                We may update these terms from time to time. Continued use of the platform means you accept any updates.
               </p>
             </Section>
 
-            {/* 2. User Obligations */}
-            <Section 
-              icon={<FiBookOpen className="text-indigo-600" />} 
-              title="2. User Obligations"
-            >
+            {/* 2. Purpose of the Service */}
+            <Section title="2. Purpose of the Service">
+              <p>
+                PostMetrics is a creative tool designed to generate realistic-looking social media mockups for 
+                entertainment, design, storytelling, and educational purposes.
+              </p>
+              <p className="mt-4">
+                It is not intended for deceptive, fraudulent, or misleading use.
+              </p>
+            </Section>
+
+            {/* 3. User Responsibilities */}
+            <Section title="3. User Responsibilities">
               <p className="mb-4">
-                Users are expected to utilize FakeYourMetrics for its intended purpose: the creation 
-                of high-fidelity visual mockups for design presentations, case studies, and editorial layouts. 
-                You agree not to:
+                By using this platform, you agree not to:
               </p>
               <ul className="list-disc pl-5 space-y-2 text-slate-500">
-                <li>Use generated mockups to commit fraud, impersonation, or financial deception.</li>
-                <li>Attempt to reverse-engineer the underlying metric generation algorithms.</li>
-                <li>Automate the scraping of the Service&apos;s visual assets for commercial resale.</li>
+                <li>Use generated content for impersonation, fraud, or misinformation.</li>
+                <li>Present generated mockups as real or verified content.</li>
+                <li>Exploit the platform for harmful or illegal activities.</li>
               </ul>
             </Section>
 
-            {/* 3. Intellectual Property */}
-            <Section 
-              icon={<FiKey className="text-indigo-600" />} 
-              title="3. Intellectual Property"
-            >
+            {/* 4. Intellectual Property */}
+            <Section title="4. Intellectual Property">
               <p>
-                <strong className="text-slate-900">The Tool:</strong> All code, algorithms, UI components, and brand identity elements remain the exclusive property of FakeYourMetrics.
+                <strong className="text-slate-900">The Platform:</strong> All design, code, and functionality remain the property of PostMetrics.
               </p>
               <p className="mt-4">
-                <strong className="text-slate-900">The Output:</strong> Users retain a non-exclusive license to use the visual mockups generated through our Service. However, the raw metadata templates remain our intellectual property.
+                <strong className="text-slate-900">Generated Content:</strong> You are free to use generated images for personal or creative purposes, 
+                but responsibility for how they are used remains with you.
               </p>
             </Section>
 
-            {/* 4. Limitation of Liability */}
-            <Section 
-              icon={<FiAlertTriangle className="text-indigo-600" />} 
-              title="4. Limitation of Liability"
-            >
+            {/* 5. Disclaimer */}
+            <Section title="5. Disclaimer">
               <p>
-                FakeYourMetrics provides a visualization tool &apos;as is.&apos; We are not responsible for how 
-                these mockups are interpreted by third parties. The mockups are illustrative and 
-                do not represent actual financial performance.
+                PostMetrics provides a visualization tool &apos;as is&apos;. Generated content is illustrative and does not represent real metrics or engagement.
               </p>
             </Section>
 
-            {/* 5. Termination */}
-            <Section 
-              icon={<FiXCircle className="text-indigo-600" />} 
-              title="5. Termination of Use"
-            >
+            {/* 6. Termination */}
+            <Section title="6. Termination">
               <p>
-                We reserve the right to suspend or terminate your access to the Service at our sole 
-                discretion, without notice, for conduct that we believe violates these Terms.
+                We reserve the right to restrict or terminate access if these terms are violated.
               </p>
             </Section>
+
           </div>
 
           {/* Contact Box */}
           <div className="mt-20 bg-indigo-50/50 border border-indigo-100 rounded-3xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h4 className="text-lg font-bold text-slate-900">Questions about our terms?</h4>
-              <p className="text-slate-500 text-sm">Our legal team is here to help clarify our policies.</p>
+              <h4 className="text-lg font-bold text-slate-900">
+                Questions about our terms?
+              </h4>
+              <p className="text-slate-500 text-sm">
+                Feel free to reach out for clarification.
+              </p>
             </div>
             <a 
               href="mailto:a.samuelsamson123@gmail.com" 
               className="flex items-center gap-2 bg-white text-indigo-600 px-6 py-3 rounded-2xl font-bold shadow-sm border border-indigo-100 hover:bg-indigo-50 transition-colors"
             >
               <FiMail />
-              a.samuelsamson123@gmail.com
+              Contact
             </a>
           </div>
         </div>
@@ -132,7 +123,7 @@ export default function TermsPage() {
   )
 }
 
-function Section({ title, children } : {icon:ReactNode, title:string, children:ReactNode}) {
+function Section({ title, children } : { title:string, children:ReactNode}) {
   return (
     <div className="flex gap-6">
       <div>

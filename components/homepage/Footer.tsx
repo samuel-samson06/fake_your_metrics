@@ -6,9 +6,9 @@ function Footer() {
     <footer className="w-full border-t border-gray-100 mt-auto bg-gray-50/50">
       <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex flex-col gap-2 text-center md:text-left">
-          <div className="text-lg font-bold text-gray-900">FakeYourMetrics</div>
+          <div className="text-lg font-bold text-gray-900">PostMetrics</div>
           <p className="text-xs text-gray-500">
-            © 2026 FakeYourMetrics.
+            © 2026 PostMetrics.
           </p>
         </div>
 

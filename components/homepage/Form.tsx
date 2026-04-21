@@ -239,8 +239,11 @@ function Form({ state, updateState }: FormProps) {
         className={`w-full text-white rounded-2xl py-4 font-bold flex items-center justify-center gap-2 transition-all mt-2 shadow-lg shadow-gray-200 active:scale-[0.98] cursor-pointer ${isTouched && !isValid ? 'bg-gray-300 cursor-not-allowed' : 'bg-gray-900 hover:bg-black'}`}
       >
         <FiDownload className="w-5 h-5" />
-        {isTouched && !isValid ? 'Please fill required fields' : 'Download High-Res Image'}
+        {isTouched && !isValid ? 'Please fill required fields' : 'Download Preview'}
       </button>
+      <span className="text-center text-sm text-gray-500 mt-2">
+        For entertainment and creative use only
+      </span>
     </div>
   )
 }

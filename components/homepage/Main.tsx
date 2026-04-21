@@ -87,12 +87,12 @@ function Main() {
 
   return (
     <main className="max-w-7xl mx-auto px-4 md:px-6 py-12 w-full flex flex-col items-center">
-      <div className="text-center max-w-2xl mb-12">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 mb-4 sm:text-6xl">
-          Create Realistic Social Media Posts
+      <div className="text-center max-w-4xl mb-12 flex flex-col gap-2 lg:pt-10">
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold lg:font-semibold tracking-tight text-gray-900 mb-4 sm:text-6xl">
+          Create Realistic posts for fun
         </h1>
         <p className="text-base md:text-lg text-gray-600">
-          Generate high quality social media posts for Twitter, Threads and more in seconds.
+          Generate high quality engagement metrics for Twitter, Threads and more in seconds.
         </p>
       </div>
 
@@ -115,7 +115,7 @@ function Main() {
       </div>
 
       {/* Editor Grid */}
-      <div id="editor-section" className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full items-start scroll-mt-24">
+      <div id="editor-section" className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 w-full items-start scroll-mt-24">
         <Preview state={state} />
         <Form state={state} updateState={updateState} />
       </div>

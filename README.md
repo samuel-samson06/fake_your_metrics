@@ -1,6 +1,6 @@
-# 🚀 FakeYourMetrics
+# 🚀 PostMetrics
 
-FakeYourMetrics is a microblogging post generator that lets you create realistic-looking posts for platforms like Twitter (X), Threads, Bluesky, and Substack.
+PostMetrics is a microblogging post generator that lets you create realistic-looking posts for platforms like Twitter (X), Threads, Bluesky, and Substack.
 
 Customize usernames, profile images, timestamps, and engagement metrics to generate shareable post previews for demos, mockups, or creative content.
 
@@ -57,3 +57,4 @@ npm install
 yarn install
 # or
 pnpm install
+```

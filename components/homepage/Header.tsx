@@ -8,7 +8,7 @@ function Header() {
     <header className="flex items-center justify-between px-4 py-5 max-w-7xl mx-auto w-full">
       <div>
         <Link href="/" className="text-base md:text-lg font-bold tracking-tight text-foreground">
-          FakeYourMetrics
+          PostMetrics
         </Link>
       </div>
       
