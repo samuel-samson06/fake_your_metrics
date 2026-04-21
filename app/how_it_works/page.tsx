@@ -12,40 +12,46 @@ export default function Page() {
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-6 text-center max-w-4xl mx-auto">
 
-        <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-6">
-          How PostMetrics Works
-        </h1>
-        <p className="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
-          Design stunning social media mockups and metric visualizations in seconds. Our tool helps you build posts without the complexity.
-        </p>
-      </section>
+  <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-6">
+    How PostMetrics Works
+  </h1>
+
+  <p className="text-base md:text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
+    Create realistic social media mock posts in seconds. Customize content, metrics, and visuals to match how real platforms look — all in one place.
+  </p>
+
+</section>
 
       {/* Feature Grid */}
       <section className="max-w-6xl mx-auto px-6 py-12">
-        <div className="grid md:grid-cols-3 gap-6">
-          <FeatureCard 
-            icon={<FiZap className="w-5 h-5 text-white" />}
-            title="Realistic Rendering"
-            desc="We use exact CSS properties from major platforms to ensure your mockups look identical to the real thing."
-          />
-          <FeatureCard 
-            icon={<FiLayout className="w-5 h-5 text-white" />}
-            title="Platform-Based UI"
-            desc="Each platform has its own unique layout. Switch between Twitter, Threads, Bluesky, and Substack with accurate styling."
-          />
-           <FeatureCard 
-            icon={<FiShield className="w-5 h-5 text-white" />}
-            title="Privacy First"
-            desc="Your data never touches our servers. Everything happens locally in your browser for total security."
-          />
-        </div>
-      </section>
+  <div className="grid md:grid-cols-3 gap-6">
+
+    <FeatureCard 
+      icon={<FiZap className="w-5 h-5 text-white" />}
+      title="Realistic Rendering"
+      desc="Carefully crafted layouts that closely match real platform designs, from spacing to typography."
+    />
+
+    <FeatureCard 
+      icon={<FiLayout className="w-5 h-5 text-white" />}
+      title="Platform-Specific UI"
+      desc="Switch between Twitter, Threads, Bluesky, and Substack with layouts tailored to each platform."
+    />
+
+    <FeatureCard 
+      icon={<FiShield className="w-5 h-5 text-white" />}
+      title="Privacy First"
+      desc="Everything runs locally in your browser. Your data isn’t stored or shared."
+    />
+
+  </div>
+</section>
 
       {/* Steps Section */}
       <section className="bg-white py-24 border-y border-slate-100">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Just Three Easy Steps</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-slate-900 mb-4">Just Three Easy Steps</h2>
             <p className="text-slate-500">The process is fluid, tactile, and designed for speed.</p>
           </div>
 
@@ -59,16 +65,25 @@ export default function Page() {
 
       {/* Footer / CTA Section */}
       <section className="py-20 px-6 text-center">
-         <div className="bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-3xl p-12 max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-slate-900">Ready to start building?</h2>
-            <Link href="/" className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg shadow-indigo-200">
-              Go to Generator
-            </Link >
-            <p className="mt-8 text-xs text-slate-400 uppercase tracking-widest font-medium animate-bounce">
-                Disclaimer: For entertainment and creative use only.
-            </p>
-         </div>
-      </section>
+  <div className="bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-3xl p-12 max-w-5xl mx-auto">
+    
+    <h2 className="text-2xl md:text-4xl lg:text-6xl  font-bold mb-6 text-slate-900">
+      Ready to create your own post?
+    </h2>
+
+    <Link 
+      href="/" 
+      className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg shadow-indigo-200"
+    >
+      Start Creating
+    </Link>
+
+    <p className="mt-8 text-xs text-slate-400 uppercase tracking-widest font-medium">
+      For entertainment and creative use only
+    </p>
+
+  </div>
+</section>
       <Footer/>
     </div>
   )

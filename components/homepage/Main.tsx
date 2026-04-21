@@ -3,6 +3,8 @@
 import React, { useState } from 'react'
 import Form from './Form'
 import Preview from './Preview';
+import { motion } from 'framer-motion';
+import { HiBolt, HiPhoto, HiCommandLine, HiShieldCheck } from 'react-icons/hi2';
 
 export type Platform = 'twitter' | 'threads' | 'bluesky' | 'substack'
 
@@ -121,16 +123,59 @@ function Main() {
       </div>
       
       {/* Bottom info section */}
-      <div className="flex flex-wrap justify-center gap-4 mt-20">
-        <div className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-xs font-semibold text-gray-600">
-          <span className="text-blue-500">⚡</span> Instant Export
-        </div>
-        <div className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-xs font-semibold text-gray-600">
-          <span className="text-blue-500">📸</span> 4K Quality
-        </div>
-        <div className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-xs font-semibold text-gray-600">
-          <span className="text-blue-500">🔒</span> Privacy First
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-32 w-full max-w-6xl">
+        {[
+          {
+            title: 'Instant Export',
+            description: 'Download high-quality PNGs in seconds, ready to share on any platform.',
+            icon: <HiBolt className="w-6 h-6" />,
+            color: 'text-blue-500',
+            bgColor: 'bg-blue-50',
+            borderColor: 'border-blue-100'
+          },
+          {
+            title: 'High-Quality Images',
+            description: 'Pixel-perfect resolution ensuring your posts look authentic everywhere.',
+            icon: <HiPhoto className="w-6 h-6" />,
+            color: 'text-purple-500',
+            bgColor: 'bg-purple-50',
+            borderColor: 'border-purple-100'
+          },
+          {
+            title: 'Platform-Accurate UI',
+            description: 'Meticulously crafted templates matching the latest social media designs.',
+            icon: <HiCommandLine className="w-6 h-6" />,
+            color: 'text-emerald-500',
+            bgColor: 'bg-emerald-50',
+            borderColor: 'border-emerald-100'
+          },
+          {
+            title: 'Privacy First',
+            description: 'Processing happens in your browser. We never store or see your data.',
+            icon: <HiShieldCheck className="w-6 h-6" />,
+            color: 'text-orange-500',
+            bgColor: 'bg-orange-50',
+            borderColor: 'border-orange-100'
+          }
+        ].map((feature, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.1 }}
+            whileHover={{ y: -5 }}
+            className="group p-6 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+          >
+            <div className={`w-12 h-12 rounded-xl ${feature.bgColor} ${feature.color} flex items-center justify-center mb-4 border ${feature.borderColor} group-hover:scale-110 transition-transform duration-300`}>
+              {feature.icon}
+            </div>
+            <h3 className="text-lg font-bold text-gray-900 mb-2">{feature.title}</h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              {feature.description}
+            </p>
+          </motion.div>
+        ))}
       </div>
     </main>
   )

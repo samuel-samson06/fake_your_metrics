@@ -2,18 +2,20 @@
 
 import Link from 'next/link';
 import React from 'react'
+import Navigation from '../layout/Navigation';
 
 function Header() {
   return (
     <header className="flex items-center justify-between px-4 py-5 max-w-7xl mx-auto w-full">
-      <div>
-        <Link href="/" className="text-base md:text-lg font-bold tracking-tight text-foreground">
+      <div className="flex items-center gap-4">
+        <Navigation />
+        <Link href="/" className="text-base md:text-lg lg:text-3xl font-bold tracking-tight text-foreground">
           PostMetrics
         </Link>
       </div>
       
       <nav className="hidden md:flex items-center gap-8">
-        <a href="/how_it_works" className="text-sm font-semibold text-accent transition-colors border-b-2 border-accent pb-0.5">
+        <a href="/how_it_works" className="text-sm md:text-lg font-semibold text-accent transition-colors border-b-2 border-accent pb-0.5">
           How it works
         </a>
       </nav>
