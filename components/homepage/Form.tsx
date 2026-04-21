@@ -95,7 +95,7 @@ function Form({ state, updateState }: FormProps) {
   const normalBorder = 'border-gray-100'
 
   return (
-    <div className="w-full h-full bg-white/40 backdrop-blur-sm border border-gray-100 p-6 sm:p-8 rounded-3xl shadow-sm flex flex-col gap-5">
+    <div className="w-full h-full bg-white/40 backdrop-blur-sm border border-gray-300 p-6 sm:p-8 rounded-3xl shadow-sm flex flex-col gap-5">
 
       {/* Name & Username */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

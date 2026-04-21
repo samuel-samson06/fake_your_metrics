@@ -34,7 +34,7 @@ function Preview({ state }: PreviewProps) {
       <div 
         ref={exportRef}
         id="preview-canvas"
-        className="w-full rounded-[40px] flex items-center justify-center px-8 py-16 transition-all duration-500 shadow-2xl relative overflow-hidden"
+        className="w-full rounded-2xl flex items-center justify-center px-2 md:px-4 py-5 md:py-8 transition-all duration-500 shadow-2xl relative overflow-hidden"
         style={{ backgroundColor: bgColor }}
       >
         {/* Subtle decorative elements */}

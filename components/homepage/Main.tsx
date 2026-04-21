@@ -86,18 +86,18 @@ function Main() {
   ]
 
   return (
-    <main className="max-w-7xl mx-auto px-6 py-12 w-full flex flex-col items-center">
+    <main className="max-w-7xl mx-auto px-4 md:px-6 py-12 w-full flex flex-col items-center">
       <div className="text-center max-w-2xl mb-12">
-        <h1 className="text-5xl font-extrabold tracking-tight text-gray-900 mb-4 sm:text-6xl">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 mb-4 sm:text-6xl">
           Create Realistic Social Media Posts
         </h1>
-        <p className="text-lg text-gray-600">
+        <p className="text-base md:text-lg text-gray-600">
           Generate high quality social media posts for Twitter, Threads and more in seconds.
         </p>
       </div>
 
       {/* Platform Selection Tabs */}
-      <div className="bg-gray-100/50 p-1.5 rounded-2xl grid grid-cols-4 gap-1 mb-12 shadow-sm border border-gray-200/50">
+      <div className="bg-gray-100/50 p-1.5 rounded-xl grid grid-cols-4 gap-1 mb-12 shadow-sm border border-gray-200/50">
         {platforms.map((p) => (
           <button
             key={p.id}
@@ -116,8 +116,8 @@ function Main() {
 
       {/* Editor Grid */}
       <div id="editor-section" className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full items-start scroll-mt-24">
-        <Form state={state} updateState={updateState} />
         <Preview state={state} />
+        <Form state={state} updateState={updateState} />
       </div>
       
       {/* Bottom info section */}
