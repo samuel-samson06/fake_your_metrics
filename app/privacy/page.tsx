@@ -8,10 +8,10 @@ function PrivacyPage() {
     <div className="bg-[#f8f9fc] min-h-screen font-sans">
       <Header />
 
-      <main className="max-w-4xl mx-auto px-6 py-20">
+      <main className="max-w-5xl mx-auto px-2 py-20">
   {/* Page Title Section */}
   <div className="text-center mb-16">
-    <h1 className="text-5xl font-black text-slate-900 mb-6 tracking-tight">
+    <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
       Privacy Policy
     </h1>
     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-100">
@@ -23,7 +23,7 @@ function PrivacyPage() {
   </div>
 
   {/* Main Content Card */}
-  <div className="bg-white rounded-[2.5rem] shadow-xl shadow-slate-200/50 p-10 md:p-16 border border-slate-100">
+  <div className="bg-white rounded-[2.5rem] shadow-xl shadow-slate-200/50 py-10 px-5 md:p-16 border border-slate-100">
     
     <p className="text-slate-600 leading-relaxed mb-12 text-lg">
       At <span className="font-semibold text-slate-800">PostMetrics</span>, we value simplicity and transparency. 
@@ -53,7 +53,7 @@ function PrivacyPage() {
     </section>
 
     {/* Highlighted Box: How We Use Data */}
-    <section className="bg-slate-50/80 rounded-3xl p-8 mb-12 border border-slate-100">
+    <section className="bg-slate-50/80 rounded-3xl py-8 px-4 mb-12 border border-slate-100">
       <h3 className="text-xl font-bold text-slate-900 mb-4 text-center">
         How We Use Your Data
       </h3>

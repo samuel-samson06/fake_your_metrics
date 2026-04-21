@@ -12,10 +12,10 @@ export default function TermsPage() {
     <div className="bg-[#fbfcff] min-h-screen font-sans">
       <Header />
 
-      <main className="max-w-4xl mx-auto px-6 py-20">
+      <main className="max-w-4xl mx-auto px-3 py-20">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-black text-slate-900 mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-slate-900 mb-6">
             Terms of <span className="text-indigo-600">Service</span>
           </h1>
           <p className="text-slate-500 max-w-xl mx-auto leading-relaxed">
@@ -90,7 +90,7 @@ export default function TermsPage() {
           </div>
 
           {/* Contact Box */}
-          <div className="mt-20 bg-indigo-50/50 border border-indigo-100 rounded-3xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="mt-20 bg-indigo-50/50 border border-indigo-100 rounded-3xl py-8 px-3 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h4 className="text-lg font-bold text-slate-900">
                 Questions about our terms?

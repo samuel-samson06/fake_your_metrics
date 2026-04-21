@@ -63,27 +63,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Footer / CTA Section */}
-      <section className="py-20 px-6 text-center">
-  <div className="bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-3xl p-12 max-w-5xl mx-auto">
-    
-    <h2 className="text-2xl md:text-4xl lg:text-6xl  font-bold mb-6 text-slate-900">
-      Ready to create your own post?
-    </h2>
-
-    <Link 
-      href="/" 
-      className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg shadow-indigo-200"
-    >
-      Start Creating
-    </Link>
-
-    <p className="mt-8 text-xs text-slate-400 uppercase tracking-widest font-medium">
-      For entertainment and creative use only
-    </p>
-
-  </div>
-</section>
       <Footer/>
     </div>
   )
