@@ -22,6 +22,7 @@ export interface PostState {
   time: string
   profileImage: string | null
   title: string
+  includeWatermark: boolean
 }
 
 export const formatNumber = (num: number): string => {
@@ -53,7 +54,8 @@ function Main() {
     date: '2026-01-01',
     views: 1200000,
     profileImage: null,
-    title: 'The Future of Interface Design'
+    title: 'The Future of Interface Design',
+    includeWatermark: true
   })
 
   const updateState = (updates: Partial<PostState>) => {

@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo, useState } from 'react'
 import { toPng } from 'html-to-image'
-import { FiDownload, FiCheckCircle, FiUpload, FiAlertCircle } from 'react-icons/fi'
+import { FiDownload, FiCheckCircle, FiUpload, FiAlertCircle, FiType } from 'react-icons/fi'
 import { PostState } from './Main'
 import avatar from "@/public/avatar.jpg"
 
@@ -230,6 +230,22 @@ function Form({ state, updateState }: FormProps) {
             />
           </label>
         ))}
+      </div>
+
+      {/* Watermark Toggle */}
+      <div className="flex items-center justify-between px-4 py-3 bg-white border border-gray-100 rounded-xl">
+        <div className="flex items-center gap-2">
+          <div className="bg-gray-100 rounded-lg p-1 text-gray-500 shadow-sm">
+            <FiType className="w-4 h-4" />
+          </div>
+          <span className="text-sm font-semibold text-gray-700">Include watermark</span>
+        </div>
+        <button
+          onClick={() => updateState({ includeWatermark: !state.includeWatermark })}
+          className={`w-12 h-6 rounded-full transition-all flex items-center p-1 cursor-pointer ${state.includeWatermark ? 'bg-indigo-600' : 'bg-gray-200'}`}
+        >
+          <div className={`w-4 h-4 rounded-full bg-white shadow-sm transition-transform ${state.includeWatermark ? 'translate-x-6' : 'translate-x-0'}`} />
+        </button>
       </div>
 
       {/* Download */}

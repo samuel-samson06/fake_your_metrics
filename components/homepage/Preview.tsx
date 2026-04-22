@@ -45,6 +45,15 @@ function Preview({ state }: PreviewProps) {
 
         {/* Dynamic Post Component */}
         <PostComponent state={state} />
+
+        {/* Watermark */}
+        {state.includeWatermark && (
+          <div className="absolute bottom-3 right-3 flex items-center gap-1.5 px-2 py-1 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg pointer-events-none select-none transition-all duration-300">
+            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest opacity-70">
+              Generated with PostMetrics
+            </span>
+          </div>
+        )}
       </div>
       
       {/* Visual hints */}

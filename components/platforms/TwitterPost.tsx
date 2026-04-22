@@ -58,7 +58,7 @@ const TwitterPost: React.FC<Props> = ({ state }) => {
       <div className="flex items-center justify-between text-gray-500 border-t border-gray-100 pt-1">
         <div className="flex items-center group cursor-pointer  p-2">
           <div className="p-1 rounded-full ">
-            <Image src={"/twitter_chat_bubble.png"} alt="Twitter chat bubble" width={25} height={25} style={{ height: 'auto' }}/>
+            <Image src={"/twitter_chat_bubble.png"} alt="Twitter chat bubble" width={25} height={25} style={{ width: 'auto', height: 'auto' }}/>
           </div>
           <span className="text-[13px]">{formatNumber(state.replies)}</span>
         </div>
