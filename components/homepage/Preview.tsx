@@ -49,7 +49,7 @@ function Preview({ state }: PreviewProps) {
       
       {/* Visual hints */}
       <div className="absolute -bottom-6 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-        <span className="bg-gray-900 text-white text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-widest shadow-xl">
+        <span className="bg-black text-white text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-widest shadow-xl">
           Live Editor Canvas
         </span>
       </div>

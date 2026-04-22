@@ -15,9 +15,9 @@ const TwitterPost: React.FC<Props> = ({ state }) => {
   const avatar = state.profileImage || `https://ui-avatars.com/api/?name=${state.name}&background=f3f4f6&color=111827&bold=true`
 
   return (
-    <div className="bg-white rounded-2xl p-4 sm:p-5 w-full max-w-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-100 animate-in fade-in zoom-in duration-300">
+    <div className="bg-white rounded-xl p-3 sm:p-5 w-full max-w-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-100 animate-in fade-in zoom-in duration-300">
       {/* Header */}
-      <div className="flex items-start justify-between mb-1">
+      <div className="flex items-start justify-between mb-3">
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-gray-100">
             <img src={avatar} alt="avatar" className="w-full h-full object-cover" />
@@ -40,7 +40,7 @@ const TwitterPost: React.FC<Props> = ({ state }) => {
       </div>
 
       {/* Content */}
-      <div className="text-[15px] sm:text-[17px] text-gray-900 leading-relaxed mb-4 whitespace-pre-wrap pl-0">
+      <div className="text-[15px] sm:text-[17px] text-gray-900 leading-relaxed mb-2 whitespace-pre-wrap pl-0">
         {state.content}
       </div>
 
